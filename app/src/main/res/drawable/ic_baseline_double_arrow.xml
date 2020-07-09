@@ -1,0 +1,96 @@
+<!--
+    <vector> é a tag raíz de um arquivo vetorial.
+
+    Os atributos android:width e android:height representam
+    a largura e altura do vetor, respectivamente.
+
+    O atributo android:tint defini a cor de todo o vetor
+    (preenchimento e bordas). Logo, utilize este atributo
+    com cautela e nunca em ilustrações que têm mais de uma
+    cor.
+
+    O atributo android:tint é sem sombra de dúvidas a
+    melhor escolha de preenchimento de ícone em vetor. Para
+    qualquer outro uso de vetor é bem provável que os
+    atributos android:fillColor e android:strokeWidth não
+    devam ser sobrescritos por um tint.
+
+    Ou seja, o android:tint certamente não deverá ser
+    utilizado quando não for para preenchimento de ícone.
+
+    O valor ?attr/colorControlNormal em android:tint é
+    comum aqui, pois esse valor representa no sistema
+    Android a cor dos componentes de controle.
+
+    E ícones estão com frequência vinculados a botões em
+    geral (botões, itens de lista, ...).
+
+    Ou seja, se o usuário aciona-los algo acontecerá com
+    o aplicativo (uma nova tela vai abrir, um formulário
+    será enviado, ...).
+
+    Os atributos android:viewportWidth e android:viewportHeight
+    representam respectivamente a largura e altura da
+    área em tela que o vetor será desenhado.
+
+    Essa área é também conhecida como canvas.
+
+    A unidade de medida do canvas, aqui em <vector>, será
+    a mesma unidade de medida utilizada em android:width
+    e android:height.
+
+    Se DP for utilizado nestes, então também será a unidade
+    de medida da viewport.
+
+    Mas note que não devemos informar isso (a unidade de
+    medida) de maneira explicita como parte do valor dos
+    atributos android:viewportWidth e android:viewportHeight,
+    o sistema se encarrega de utilizar a unidade de medida
+    correta.
+
+    Isso parece uma limitação, mas na verdade viewportWidth
+    e viewportHeight não têm unidades físicas associadas a
+    eles. Isso ocorre porque não há uma unidade significativa
+    que você possa associar a eles, pois um desenho vetorial
+    sempre será dimensionado para um tamanho físico.
+-->
+<vector
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:tint="?attr/colorControlNormal"
+    android:viewportHeight="24"
+    android:viewportWidth="24"
+    android:height="64dp"
+    android:width="64dp">
+
+    <!--
+        A tag <path> é onde é definido o caminho, o que será
+        desenhado (linha, curva cúbica, curva quadratica ou
+        borda).
+
+        É possível ter inúmeros paths ou tudo somente em um
+        único path.
+
+        A forma do que será desenhado é definido no atributo
+        pathData.
+
+        O valor de pathData pode ser entendido como
+        "o movimento de uma caneta de desenho no plano
+        cartesiano".
+
+        Note que a definição de cor (fillColor ou strokeColor)
+        é necessária, caso contrário nada será desenhado em tela.
+
+        Mas tanto fillColor quanto strokeColor serão ignorados
+        se o atributo android:tint for utilizado na tag raíz,
+        <vector>.
+    -->
+    <path
+        android:fillColor="@android:color/white"
+        android:strokeColor="#ff0000"
+        android:strokeWidth="0.0"
+        android:pathData="M15.5,5l-4.5,0l5,7l-5,7l4.5,0l5,-7z"/>
+
+    <path
+        android:fillColor="@android:color/white"
+        android:pathData="M8.5,5l-4.5,0l5,7l-5,7l4.5,0l5,-7z"/>
+</vector>

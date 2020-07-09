@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="thiengo.com.br.vectortests">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".samples.OPorqueDasImagensVetoriaisActivity"
+            android:label="@string/o_porque_das_imagens_vetoriais_name" />
+        <activity
+            android:name=".samples.OComumCarregamentoDiretoNoXmlDeLayoutActivity"
+            android:label="@string/o_comum_carregamento_direto_no_xml_de_layout" />
+        <activity
+            android:name=".samples.CarregamentoViaKotlinApiActivity"
+            android:label="@string/carregamento_via_kotlin_api" />
+        <activity
+            android:name=".samples.CarregamentoDiretoNoXmlDeLayoutActivity"
+            android:label="@string/carregamento_direto_no_xml_de_layout" />
+        <activity
+            android:name=".samples.VetorViaSuporteKotlinApiActivity"
+            android:label="@string/vetor_via_suporte_kotlin_api" />
+        <activity
+            android:name=".samples.IconesInternosDeSistemaActivity"
+            android:label="@string/icones_internos_de_sistema" />
+        <activity
+            android:name=".samples.ImportacaoDeArquivosExternosSvgEPsdActivity"
+            android:label="@string/importacao_de_arquivos_externos_svg_e_psd" />
+    </application>
+
+</manifest>

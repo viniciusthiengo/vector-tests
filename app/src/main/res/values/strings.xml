@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">
+        Vector Tests
+    </string>
+
+    <string name="o_porque_das_imagens_vetoriais_name">
+        O porquê das imagens vetoriais
+    </string>
+    <string name="o_comum_carregamento_direto_no_xml_de_layout">
+        O comum: carregamento direto no XML de layout
+    </string>
+    <string name="carregamento_via_kotlin_api">
+        Carregamento via Kotlin API
+    </string>
+    <string name="carregamento_direto_no_xml_de_layout">
+        Carregamento direto no XML de layout
+    </string>
+    <string name="vetor_via_suporte_kotlin_api">
+        Vetor via suporte Kotlin API
+    </string>
+    <string name="icones_internos_de_sistema">
+        Ícones internos de sistema
+    </string>
+    <string name="importacao_de_arquivos_externos_svg_e_psd">
+        Importação de arquivos externos (SVG e PSD)
+    </string>
+
+    <string name="simple_vector">
+        Um simples imagem vetorial
+    </string>
+</resources>
