@@ -6,7 +6,7 @@ Artigo que apresenta passo a passo todo o trabalho com drawables (imagens) vetor
 
 Também são abordadas dicas essenciais como: o "problema" com a API de suporte de vetores (para versões do Android abaixo da API 21 - Lollipop) e o porquê de evita-la.
 
-<img src="https://www.thiengo.com.br/img/post/normal/lllpfgu2d49n6p37uh386ls8s4a2504c0e651daed1194c672762226c7a.jpg" height="400" alt="Aplicativo Android Vector Tests - Para testes com a API de vetores">
+<img src="https://www.thiengo.com.br/img/post/normal/qvcnge7vchl98cdb6euphq24826abd845273082620df6c7f5e45d41719.jpg" height="400" alt="Aplicativo Android Vector Tests - Para testes com a API de vetores">
 
 O conteúdo do artigo também está disponível em [vídeos](https://www.thiengo.com.br/porque-e-como-utilizar-vetores-no-android#videos) e em [slides](https://www.thiengo.com.br/porque-e-como-utilizar-vetores-no-android#slides).
 
