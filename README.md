@@ -2,23 +2,25 @@
 
 Projeto Kotlin Android da primeira parte do "artigo aula" [Porque e Como Utilizar Vetores no Android](https://www.thiengo.com.br/porque-e-como-utilizar-vetores-no-android#o-porque-das-imagens-vetoriais) do Blog [Thiengo.com.br](https://www.thiengo.com.br).
 
-Artigo que apresenta passo a passo todo o trabalho com gráficos (imagens) vetoriais em aplicativos Android.
+Artigo que apresenta passo a passo todo o trabalho com drawables (imagens) vetoriais em apps Android.
 
-Também são abordadas dicas essenciais como: o "problema" com a API de suporte de vetores (para versões do Android abaixo da API 21 - Lollipop) e o porquê de evita-la
+Também são abordadas dicas essenciais como: o "problema" com a API de suporte de vetores (para versões do Android abaixo da API 21 - Lollipop) e o porquê de evita-la.
 
-<img src="https://www.thiengo.com.br/img/post/normal/lllpfgu2d49n6p37uh386ls8s4a2504c0e651daed1194c672762226c7a.jpg" height="590" alt="Aplicativo Android Yosemite Summer Camp - Para testes com a API de vetores">
+<img src="https://www.thiengo.com.br/img/post/normal/lllpfgu2d49n6p37uh386ls8s4a2504c0e651daed1194c672762226c7a.jpg" height="400" alt="Aplicativo Android Vector Tests - Para testes com a API de vetores">
 
 O conteúdo do artigo também está disponível em [vídeos](https://www.thiengo.com.br/porque-e-como-utilizar-vetores-no-android#videos) e em [slides](https://www.thiengo.com.br/porque-e-como-utilizar-vetores-no-android#slides).
 
-### Primeira parte
+### Segunda parte
 
-Caso você queira ter acesso à primeira parte do artigo, então [entre por aqui](https://www.thiengo.com.br/porque-e-como-utilizar-vetores-no-android#o-porque-das-imagens-vetoriais). Está primeira parte mostra, detalhadamente, como utilizar de maneira eficiente os drawables vetoriais estáticos.
+Caso você queira ter acesso à segunda parte do artigo, então [entre por aqui](https://www.thiengo.com.br/porque-e-como-utilizar-vetores-no-android#projeto-android).
 
-Também há dicas importantes sobre quando não utilizar vetores no Android.
+Nesta segunda parte nós vamos passo a passo construir um trecho de um aplicativo Android real. Trecho esse que se beneficiará diretamente do uso de vetores ao invés de imagens rasterizadas.
+
+Também há dicas sobre como colocar em seu app algumas características modernas de layout.
 
 Fortemente recomendo que você pegue um café ☕ 🥨 antes de iniciar os estudos no artigo. Isso, pois o conteúdo é muito importante para desenvolvedores Android e está bem completo.
 
-Para acessar o projeto Android da primeira parte do artigo aula, então entre no seguinte repositório: [Vector Tests - (Kotlin Android)](https://github.com/viniciusthiengo/vector-tests)
+Para acessar o projeto Android da segunda parte do artigo aula, então entre no seguinte repositório: [Yosemite Summer Camp (Kotlin Android)](https://github.com/viniciusthiengo/yosemite-summer-camp)
 
 ### Versão em PDF
 
