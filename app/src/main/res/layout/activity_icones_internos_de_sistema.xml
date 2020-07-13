@@ -10,5 +10,6 @@
         android:layout_width="190dp"
         android:layout_height="190dp"
         android:layout_gravity="center"
+        android:contentDescription="@string/battery_charging_full_icon"
         android:src="@drawable/ic_baseline_battery_charging_full" />
 </FrameLayout>

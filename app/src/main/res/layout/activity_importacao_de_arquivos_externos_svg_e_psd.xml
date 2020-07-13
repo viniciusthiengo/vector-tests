@@ -10,5 +10,6 @@
         android:layout_width="190dp"
         android:layout_height="190dp"
         android:layout_gravity="center"
+        android:contentDescription="@string/doctor_icon"
         android:src="@drawable/ic_doctor" />
 </FrameLayout>

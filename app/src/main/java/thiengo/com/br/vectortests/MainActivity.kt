@@ -7,89 +7,124 @@ import androidx.appcompat.app.AppCompatActivity
 import thiengo.com.br.vectortests.samples.*
 
 class MainActivity : AppCompatActivity() {
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
 
-        /*
-         * A seguir estamos carregando, via Kotlin API, uma imagem
-         * vetorial em um ImageView.
-         *
-         * Carregando utilizando a API de suporte, pois neste
-         * projeto de exemplo estamos dando suporte a partir do
-         * Android API 16 (Jelly Bean).
-         *
-         * Caso contrário poderiamos utilizar direto o
-         * resource.getDrawable().
-         *
-         * Lembrando que tanto Bitmap quanto Vector são Drawables.
-         *
-         * Drawable, de forma geral, é qualquer recurso que pode
-         * ser desenhado em tela.
-         * */
-        /*iv_ic_boat.setImageDrawable(
-            //resources.getDrawable( R.drawable.ic_outline_directions_boat, null )
-            ResourcesCompat.getDrawable( resources, R.drawable.ic_outline_directions_boat, null )
-        )*/
+    companion object{
+        const val LAYOUT_ID = "layout_id"
     }
 
-    fun runAnimation( v: View ){
-        /*
-         * Para que a animação aconteça em tela, é preciso invocar
-         * animatedVectorDrawable.start() no código dinâmico.
-         * */
-        //(v.background as AnimatedVectorDrawable).start()
-
-        //((v as ImageView).drawable as AnimatedVectorDrawable).start()
+    override fun onCreate( savedInstanceState: Bundle? ) {
+        super.onCreate( savedInstanceState )
+        setContentView( R.layout.activity_main )
     }
 
+
+    /*
+     * Tópico ➙ O porquê das imagens vetoriais
+     * */
     fun oPorqueDasImagensVetoriais( view: View ){
         val intent = Intent(
             this,
             OPorqueDasImagensVetoriaisActivity::class.java
         )
+
+        val layoutId = when( view.id ){
+            R.id.bt_o_porque_das_imagens_vetoriais_teste_1 ->
+                R.layout.activity_o_porque_das_imagens_vetoriais_teste_1
+            R.id.bt_o_porque_das_imagens_vetoriais_teste_2 ->
+                R.layout.activity_o_porque_das_imagens_vetoriais_teste_2
+            R.id.bt_o_porque_das_imagens_vetoriais_teste_3 ->
+                R.layout.activity_o_porque_das_imagens_vetoriais_teste_3
+            R.id.bt_o_porque_das_imagens_vetoriais_teste_4 ->
+                R.layout.activity_o_porque_das_imagens_vetoriais_teste_4
+            R.id.bt_o_porque_das_imagens_vetoriais_teste_5 ->
+                R.layout.activity_o_porque_das_imagens_vetoriais_teste_5
+            else ->
+                R.layout.activity_o_porque_das_imagens_vetoriais_teste_6
+        }
+
+        intent.putExtra(
+            MainActivity.LAYOUT_ID,
+            layoutId
+        )
+
         startActivity( intent )
     }
-    fun oComumCarregamentoDiretoNoXmlDeLayout(view: View ){
+
+
+    /*
+     * Tópico ➙ O comum: carregamento direto no XML de layout
+     * */
+    fun oComumCarregamentoDiretoNoXmlDeLayout( view: View ){
         val intent = Intent(
             this,
             OComumCarregamentoDiretoNoXmlDeLayoutActivity::class.java
         )
+
         startActivity( intent )
     }
-    fun carregamentoViaKotlinApi(view: View ){
+
+
+    /*
+     * Tópico ➙ Carregamento via Kotlin API
+     * */
+    fun carregamentoViaKotlinApi( view: View ){
         val intent = Intent(
             this,
             CarregamentoViaKotlinApiActivity::class.java
         )
+
         startActivity( intent )
     }
-    fun carregamentoDiretoNoXmlDeLayout(view: View ){
+
+
+    /*
+     * Tópico ➙ Carregamento direto no XML de layout
+     * */
+    fun carregamentoDiretoNoXmlDeLayout( view: View ){
         val intent = Intent(
             this,
             CarregamentoDiretoNoXmlDeLayoutActivity::class.java
         )
+
         startActivity( intent )
     }
-    fun vetorViaSuporteKotlinApi(view: View ){
+
+
+    /*
+     * Tópico ➙ Vetor via suporte Kotlin API
+     * */
+    fun vetorViaSuporteKotlinApi( view: View ){
         val intent = Intent(
             this,
             VetorViaSuporteKotlinApiActivity::class.java
         )
+
         startActivity( intent )
     }
-    fun iconesInternosDeSistema(view: View ){
+
+
+    /*
+     * Tópico ➙ Ícones internos de sistema
+     * */
+    fun iconesInternosDeSistema( view: View ){
         val intent = Intent(
             this,
             IconesInternosDeSistemaActivity::class.java
         )
+
         startActivity( intent )
     }
+
+
+    /*
+     * Tópico ➙ Ícones internos de sistema
+     * */
     fun importacaoDeArquivosExternosSvgEPsd(view: View ){
         val intent = Intent(
             this,
             ImportacaoDeArquivosExternosSvgEPsdActivity::class.java
         )
+
         startActivity( intent )
     }
 }

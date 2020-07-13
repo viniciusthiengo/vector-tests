@@ -25,7 +25,72 @@
         Importação de arquivos externos (SVG e PSD)
     </string>
 
+    <string name="article_title">
+        <b>Artigo:</b>
+        Porque e Como Utilizar Vetores no Android
+    </string>
+    <string name="article_author">
+        <b>Autor:</b>
+        Vinícius Thiengo
+    </string>
+    <string name="article_url">
+        <b>Página:</b>
+        https://www.thiengo.com.br/porque-e-como-utilizar-vetores-no-android
+    </string>
+
     <string name="simple_vector">
-        Um simples imagem vetorial
+        Um simples drawable vetorial
+    </string>
+
+    <string name="radio_vector_drawable">
+        Drawable vetorial de rádio
+    </string>
+    <string name="radio_raster_drawable">
+        Drawable rasterizado de rádio
+    </string>
+
+    <string name="test_algorithm">Teste</string>
+    <string name="first_algorithm">1º Teste</string>
+    <string name="second_algorithm">2º Teste</string>
+    <string name="third_algorithm">3º Teste</string>
+    <string name="fourth_algorithm">4º Teste</string>
+    <string name="fifth_algorithm">5º Teste</string>
+    <string name="sixth_algorithm">6º Teste</string>
+
+    <string name="width_60dp_height_60dp">
+        Largura = 60dp | Altura = 60dp
+    </string>
+    <string name="height_180dp_width_180dp">
+        Largura = 180dp | Altura = 180dp
+    </string>
+    <string name="height_360dp_width_360dp">
+        Largura = 360dp | Altura = 360dp
+    </string>
+
+    <string name="less_than_original_size_vector">
+        Menor do que a proporção original definida em arquivo XML de vetor (180dp x 180dp).
+    </string>
+    <string name="original_size_vector">
+        Proporção original (180dp x 180dp). Arquivo XML de vetor.
+    </string>
+    <string name="big_than_original_size_vector">
+        Maior do que a proporção original definida em arquivo XML de vetor (180dp x 180dp).
+    </string>
+
+    <string name="less_than_original_size_raster">
+        Menor do que a proporção original definida em arquivo PNG (180dp x 180dp).
+    </string>
+    <string name="original_size_raster">
+        Proporção original (180dp x 180dp). Arquivo raster (PNG).
+    </string>
+    <string name="big_than_original_size_raster">
+        Maior do que a proporção original definida em arquivo PNG (180dp x 180dp).
+    </string>
+
+    <string name="battery_charging_full_icon">
+        Ícone de bateria completa. Ícone interno adicionado Via Vector Asset Studio.
+    </string>
+    <string name="doctor_icon">
+        Ícone de um médico. Ícone externo adicionado Via Vector Asset Studio.
     </string>
 </resources>

@@ -19,25 +19,68 @@
         </activity>
         <activity
             android:name=".samples.OPorqueDasImagensVetoriaisActivity"
-            android:label="@string/o_porque_das_imagens_vetoriais_name" />
+            android:label="@string/o_porque_das_imagens_vetoriais_name"
+            android:parentActivityName=".MainActivity">
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
         <activity
             android:name=".samples.OComumCarregamentoDiretoNoXmlDeLayoutActivity"
-            android:label="@string/o_comum_carregamento_direto_no_xml_de_layout" />
+            android:label="@string/o_comum_carregamento_direto_no_xml_de_layout"
+            android:parentActivityName=".MainActivity">
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
         <activity
             android:name=".samples.CarregamentoViaKotlinApiActivity"
-            android:label="@string/carregamento_via_kotlin_api" />
+            android:label="@string/carregamento_via_kotlin_api"
+            android:parentActivityName=".MainActivity">
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
         <activity
             android:name=".samples.CarregamentoDiretoNoXmlDeLayoutActivity"
-            android:label="@string/carregamento_direto_no_xml_de_layout" />
+            android:label="@string/carregamento_direto_no_xml_de_layout"
+            android:parentActivityName=".MainActivity">
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
         <activity
             android:name=".samples.VetorViaSuporteKotlinApiActivity"
-            android:label="@string/vetor_via_suporte_kotlin_api" />
+            android:label="@string/vetor_via_suporte_kotlin_api"
+            android:parentActivityName=".MainActivity">
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
         <activity
             android:name=".samples.IconesInternosDeSistemaActivity"
-            android:label="@string/icones_internos_de_sistema" />
+            android:label="@string/icones_internos_de_sistema"
+            android:parentActivityName=".MainActivity">
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
         <activity
             android:name=".samples.ImportacaoDeArquivosExternosSvgEPsdActivity"
-            android:label="@string/importacao_de_arquivos_externos_svg_e_psd" />
+            android:label="@string/importacao_de_arquivos_externos_svg_e_psd"
+            android:parentActivityName=".MainActivity">
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
     </application>
 
 </manifest>

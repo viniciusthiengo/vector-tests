@@ -1,210 +1,173 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorActivityBackground"
     tools:context=".MainActivity">
 
-    <Button
-        android:onClick="oPorqueDasImagensVetoriais"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/o_porque_das_imagens_vetoriais_name"/>
+        android:orientation="vertical"
+        android:padding="12dp">
 
-    <Button
-        android:onClick="oComumCarregamentoDiretoNoXmlDeLayout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/o_comum_carregamento_direto_no_xml_de_layout"/>
+        <!-- Bloco artigo -->
+        <LinearLayout
+            style="@style/AppTheme.LinearLayoutWrapperBox">
 
-    <Button
-        android:onClick="carregamentoViaKotlinApi"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/carregamento_via_kotlin_api"/>
+            <TextView
+                style="@style/AppTheme.TextViewTopicTitle"
+                android:gravity="start"
+                android:text="@string/article_title" />
 
-    <Button
-        android:onClick="carregamentoDiretoNoXmlDeLayout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/carregamento_direto_no_xml_de_layout"/>
+            <TextView
+                style="@style/AppTheme.TextViewTopicTitle"
+                android:gravity="start"
+                android:text="@string/article_author" />
 
-    <Button
-        android:onClick="vetorViaSuporteKotlinApi"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/vetor_via_suporte_kotlin_api"/>
+            <TextView
+                style="@style/AppTheme.TextViewTopicTitle"
+                android:layout_marginBottom="0dp"
+                android:gravity="start"
+                android:autoLink="web"
+                android:textColorLink="@color/colorLink"
+                android:text="@string/article_url" />
+        </LinearLayout>
 
-    <Button
-        android:onClick="iconesInternosDeSistema"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/icones_internos_de_sistema"/>
 
-    <Button
-        android:onClick="importacaoDeArquivosExternosSvgEPsd"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/importacao_de_arquivos_externos_svg_e_psd"/>
+        <!-- Tópico ➙ O porquê das imagens vetoriais -->
+        <LinearLayout style="@style/AppTheme.LinearLayoutWrapperBox">
 
-    <!--
-         Uma simples vinculação de um drawable vetorial a um ImageView.
+            <TextView
+                style="@style/AppTheme.TextViewTopicTitle"
+                android:text="@string/o_porque_das_imagens_vetoriais_name" />
 
-         Neste exemplo o drawable vetorial é um ícone de sistema, caso
-         onde o uso de vetor é o mais recomendado.
+            <Button
+                android:id="@+id/bt_o_porque_das_imagens_vetoriais_teste_1"
+                style="@style/AppTheme.Button"
+                android:onClick="oPorqueDasImagensVetoriais"
+                android:text="@string/first_algorithm" />
 
-         Este ícone foi obtido do VectorAsset do Android Studio IDE.
-         Um repositório local com aproximadamente 900 ícones prontos
-         para serem utilizados em projetos.
+            <Button
+                android:id="@+id/bt_o_porque_das_imagens_vetoriais_teste_2"
+                style="@style/AppTheme.Button"
+                android:onClick="oPorqueDasImagensVetoriais"
+                android:text="@string/second_algorithm" />
 
-         Para versões anteriores ao Android 21 (Lollipop) serão também
-         geradas imagens rasterizadas (PNG) quando houver uso de vetores.
+            <Button
+                android:id="@+id/bt_o_porque_das_imagens_vetoriais_teste_3"
+                style="@style/AppTheme.Button"
+                android:onClick="oPorqueDasImagensVetoriais"
+                android:text="@string/third_algorithm" />
 
-         Isso, pois versões do Android abaixo da API 21 não têm suporte à
-         imagens vetoriais, desta forma a API de suporte, junto ao
-         plugin do Gradle, realiza toda a administração de geração de
-         ícones rasterizados.
+            <Button
+                android:id="@+id/bt_o_porque_das_imagens_vetoriais_teste_4"
+                style="@style/AppTheme.Button"
+                android:onClick="oPorqueDasImagensVetoriais"
+                android:text="@string/fourth_algorithm" />
 
-         Nós desenvovledores não temos nem mesmo que atualiza-los,
-         quando houver alteração no vetor o plugin do Gradle se encarrega
-         de atualizar também as imagens rasterizadas.
+            <Button
+                android:id="@+id/bt_o_porque_das_imagens_vetoriais_teste_5"
+                style="@style/AppTheme.Button"
+                android:onClick="oPorqueDasImagensVetoriais"
+                android:text="@string/fifth_algorithm" />
 
-         As imagens rasterizadas podem ser conferidas se o seu projeto
-         atende também a versões do Android abaixo da API 21 e se ele
-         já foi gerado (Make Project).
+            <Button
+                android:id="@+id/bt_o_porque_das_imagens_vetoriais_teste_6"
+                style="@style/AppTheme.Button"
+                android:onClick="oPorqueDasImagensVetoriais"
+                android:text="@string/sixth_algorithm" />
+        </LinearLayout>
 
-         Desta forma, com o modo de visualização do projeto em "Project",
-         acesse /app/build/generated/pngs e assim você terá acesso a elas.
 
-         Não edite-as, edite somente a imagem de vetor caso necessário.
+        <!-- Tópico ➙ O comum: carregamento direto no XML de layout -->
+        <LinearLayout style="@style/AppTheme.LinearLayoutWrapperBox">
 
-         A imagem de vetor estará em /app/src/main/res/drawable.
+            <TextView
+                style="@style/AppTheme.TextViewTopicTitle"
+                android:text="@string/o_comum_carregamento_direto_no_xml_de_layout" />
 
-         Note que como recomendado pela documentação oficial, se o
-         drawable vetorial tiver que ter mais do que 200dp x 200dp é
-         melhor utilizar um conjunto de imagens rasterizadas, pois a
-         renderização de imagens vetoriais é pesada no Android.
+            <Button
+                android:id="@+id/bt_o_comum_carregamento_direto_no_xml_de_layout"
+                style="@style/AppTheme.Button"
+                android:onClick="oComumCarregamentoDiretoNoXmlDeLayout"
+                android:text="@string/test_algorithm" />
+        </LinearLayout>
 
-         Há casos também em que o arquivo de imagem vetorial é ainda
-         maior do que todo o conjunto de imagens rasterizadas. Ou seja,
-         neste caso também é melhor utilizar o conjunto de ao menos
-         quatro imagens rasterizadas (mdpi, hdpi, xhdpi e xxhdpi).
 
-         Lembrando que a renderização de imagens rasterizadas é
-         "tranquila", pois o que realmente é necessário de informação
-         é a cor de cada pixel da imagem.
+        <!-- Tópico ➙ Carregamento via Kotlin API -->
+        <LinearLayout style="@style/AppTheme.LinearLayoutWrapperBox">
 
-         Em contra partida a imagem fica pixalada (distorcida) se
-         for necessário uma versão maior dela em tela e não houver
-         essa versão disponível... ou seja, ela será esticada devido
-         à falta de informação (pixels extras).
+            <TextView
+                style="@style/AppTheme.TextViewTopicTitle"
+                android:text="@string/carregamento_via_kotlin_api" />
 
-         Sem contar que a manutenção de imagens rasterizadas exige
-         ao menos a criação de novas quatro imagens para cada imagem
-         em manutenção.
+            <Button
+                android:id="@+id/bt_carregamento_via_kotlin_api"
+                style="@style/AppTheme.Button"
+                android:onClick="carregamentoViaKotlinApi"
+                android:text="@string/test_algorithm" />
+        </LinearLayout>
 
-         A renderização das imagens vetoriais é um pouco mais crítica,
-         pois o processo no Android gera ao final uma imagem
-         rasterizada, um bitmap (mapa de bits).
 
-         Então tem todo um processo de conversão de vetor para bitmap.
-         Algo que não existe em renderização de imagens rasterizadas,
-         pois elas já são um mapa de bits (bitmap).
+        <!-- Tópico ➙ Carregamento direto no XML de layout -->
+        <LinearLayout style="@style/AppTheme.LinearLayoutWrapperBox">
 
-         Porém apenas uma única imagem vetorial é necessaria, pois não
-         há perda de informação quando é preciso mudar o tamanho da
-         imagem em tela.
+            <TextView
+                style="@style/AppTheme.TextViewTopicTitle"
+                android:text="@string/carregamento_direto_no_xml_de_layout" />
 
-         Ao invés de pixels, as imagens vetoriais trabalham em cima de
-         equações matemáticas em plano cartesiano, com linhas, curvas,
-         bordas e definições de estilo (cor, largura de borda, ...).
-     -->
-    <!-- ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/ic_baseline_double_arrow" / -->
+            <Button
+                android:id="@+id/bt_carregamento_direto_no_xml_de_layout"
+                style="@style/AppTheme.Button"
+                android:onClick="carregamentoDiretoNoXmlDeLayout"
+                android:text="@string/test_algorithm" />
+        </LinearLayout>
 
-    <!--
-         O ImageView a seguir utiliza uma imagem vetorial de 8 MB que
-         certamente é maior do que todo o conjunto de imagens da versão
-         rasterizada dela.
 
-         Essa imagem é na verdade uma imagem PSD (Adobe Photoshop
-         Document).
+        <!-- Tópico ➙ Vetor via suporte Kotlin API -->
+        <LinearLayout style="@style/AppTheme.LinearLayoutWrapperBox">
 
-         A API de imagens vetoriais do Android dá suporte a vetores
-         SVG e PSD.
+            <TextView
+                style="@style/AppTheme.TextViewTopicTitle"
+                android:text="@string/vetor_via_suporte_kotlin_api" />
 
-         Na verdade o suporte é limitado. A API de vetores do Android dá
-         suporte à uma parte de todo o conjunto de possibilidades em SVG
-         e PSD.
+            <Button
+                android:id="@+id/bt_vetor_via_suporte_kotlin_api"
+                style="@style/AppTheme.Button"
+                android:onClick="vetorViaSuporteKotlinApi"
+                android:text="@string/test_algorithm" />
+        </LinearLayout>
 
-         Isso, pois há muitos aparelhos sendo atendidos pelo sistema
-         Android e alguns deles não têm capacidade de processamento de
-         caracteristicas comuns em imagens vetoriais (SVG e PSD) que
-         são apresentadas com facilidade em navegadores Web.
 
-         Note que estamos utilizando o atributo app:srcCompat, pois o
-         projeto de aplicativo dá suporte a partir do Android API 16
-         (Jelly Bean).
+        <!-- Tópico ➙ Ícones internos de sistema -->
+        <LinearLayout style="@style/AppTheme.LinearLayoutWrapperBox">
 
-         Caso o suporte fosse a partir do Android 21 (Lollipop), então
-         seguramente poderiamos utilizar o popular android:src.
-     -->
-    <!-- ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/il_work_station" / -->
+            <TextView
+                style="@style/AppTheme.TextViewTopicTitle"
+                android:text="@string/icones_internos_de_sistema" />
 
-    <!--
-         Vetor carregado via Kotlin code com a API de suporte de
-         vetores do Android.
-     -->
-    <!-- ImageView
-        android:id="@+id/iv_ic_boat"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" / -->
+            <Button
+                android:id="@+id/bt_icones_internos_de_sistema"
+                style="@style/AppTheme.Button"
+                android:onClick="iconesInternosDeSistema"
+                android:text="@string/test_algorithm" />
+        </LinearLayout>
 
-    <!--
-         Todas as definições aplicadas no ImageView que entram em
-         conflito com definições aplicadas no vetor.
 
-         Todas essas do ImageView sobrescreverão as definições do
-         vetor, pois elas têm prioridade.
+        <!-- Tópico ➙ Ícones internos de sistema -->
+        <LinearLayout style="@style/AppTheme.LinearLayoutWrapperBox">
 
-         O android:tint abaixo do ImageView simplesmente
-         sobrescreve a mesma definição de atributo no vetor
-         carregado em app:srcCompat.
-     -->
-    <!-- ImageView
-        android:tint="@color/colorAccent"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/ic_baseline_sports_motorsports" / -->
+            <TextView
+                style="@style/AppTheme.TextViewTopicTitle"
+                android:text="@string/importacao_de_arquivos_externos_svg_e_psd" />
 
-    <!--
-         Apesar de ser possível já carregar a animação com o atributo
-         android:src (app:srcCompat) ou com o atributo android:background.
-
-         Apesar disso espera-se que a sua animação seja carregada
-         em código dinâmico. Tendo em mente que ela roda como esperado
-         quando é definida como background do componente visual
-         (imageView, ImageButton, ...).
-
-         Note que apesar de ser possível carregar a animação via
-         android:src (app:srcCompat), ela simplesmente não executa
-         como esperado quando carregada com esse atributo.
-
-         Para que a animação aconteça em tela, é preciso invocar
-         animatedVectorDrawable.start() no código dinâmico.
-     -->
-    <!-- ImageView
-        android:id="@+id/iv_animation"
-        android:onClick="runAnimation"
-        android:tint="@color/colorAccent"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/animatorvectordrawable" / -->
-
-</LinearLayout>
+            <Button
+                android:id="@+id/bt_importacao_de_arquivos_externos_svg_e_psd"
+                style="@style/AppTheme.Button"
+                android:onClick="importacaoDeArquivosExternosSvgEPsd"
+                android:text="@string/test_algorithm" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
